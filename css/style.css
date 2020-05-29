@@ -634,6 +634,9 @@ a.contact_btn:hover {
     background: transparent;
 }
 
+.project {
+    border: 4px solid black;
+}
 
 /* Portfolio
 ---------------------------------*/
