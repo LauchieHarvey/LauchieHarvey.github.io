@@ -1356,8 +1356,9 @@ border: 1px solid #CE1139;
     padding-bottom: 0px;
 }
 
-#portfolio {
+.projects {
     padding: 60px 0 40px;
+    display: inline-block
 }
 
 
@@ -1429,9 +1430,6 @@ border: 1px solid #CE1139;
 
 /* Portfolio Items */	
 
-.portfolio {
-    display: inline-block;
-}
 
 .item_overlay {
     width: 100%;
