@@ -1429,46 +1429,8 @@ border: 1px solid #CE1139;
 
 /* Portfolio Items */	
 
-#portfolio_wrapper {
-    position: relative;
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
+.portfolio {
     display: inline-block;
-}
-
-#portfolio_wrapper .one-four {
-    margin: 0!important;
-    line-height: 0;
-    width: 25%;
-    padding: 0;
-    position: relative;
-}
-
-.portfolio-item {
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-item .portfolio_img {
-    overflow: hidden;
-    display: block;
-    position: relative;
-}
-
-.portfolio-item .portfolio_img img {
-    width: 100%;
-    height: auto;
-}
-
-.portfolio-item:hover .item_overlay {
-    opacity: 1;
-    transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -webkit-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
 }
 
 .item_overlay {
