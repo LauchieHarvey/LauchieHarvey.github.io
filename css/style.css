@@ -641,7 +641,6 @@ a.contact_btn:hover {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 0 auto;
     margin-bottom: 20px;
 }
 
@@ -1361,7 +1360,7 @@ border: 1px solid #CE1139;
 .projects {
     padding: 60px 0 40px;
     display: inline-block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
