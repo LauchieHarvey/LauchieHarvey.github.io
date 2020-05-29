@@ -641,9 +641,8 @@ a.contact_btn:hover {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 0 auto;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Portfolio
