@@ -1387,6 +1387,7 @@ border: 1px solid #CE1139;
 ul li a h5 {
     background: none repeat scroll 0 0 #f7f7f7;
     border-radius: 0;
+    display: inline-block;
     font-size: 12px;
     line-height: 20px;
     margin-bottom: 5px;
