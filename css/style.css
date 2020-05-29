@@ -637,7 +637,8 @@ a.contact_btn:hover {
 .project {
     border: 5px solid black;
     display:inline-block;
-    padding: 20px, 20px, 0px, 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Portfolio
