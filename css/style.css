@@ -635,7 +635,9 @@ a.contact_btn:hover {
 }
 
 .project {
-    border: 4px solid black;
+    border: 5px solid black;
+    width: 75%;
+    margin: auto;
 }
 
 /* Portfolio
