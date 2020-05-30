@@ -1,7 +1,7 @@
 ## This is the GitHub repository for my personal portfolio. 
 The website template was taken from "WebThemez.com" see the reference below.
 
-
+You can view the website here: https://lauchieharvey.github.io/
 
 
 ### Credits :
