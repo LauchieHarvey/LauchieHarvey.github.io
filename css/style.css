@@ -214,9 +214,10 @@ h2 {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
-    margin: 0px 0 25px 0;
+    margin: 10px auto;
     text-align: center;
     text-transform: capitalize;
+    width: max-content;
 }
 
 h3 {
@@ -239,7 +240,8 @@ h6 {
 
 p {
     line-height: 24px;
-    margin: 0;
+    margin: 0 auto;
+    width: max-content;
 }
 
 /* Header Styles
@@ -649,6 +651,7 @@ a.contact_btn:hover {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+    width: min-content;
 }
 
 /* Portfolio
@@ -1422,7 +1425,7 @@ ul li a:hover h5, #filters ul li a.active h5 {
     font-family: 'Raleway', sans-serif;
     font-size: 34px;
     letter-spacing: -1px;
-    margin: 0 0 15px;
+    margin: 10px auto;
     text-align: center;
 }
 
