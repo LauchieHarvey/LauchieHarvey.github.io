@@ -23,6 +23,13 @@ a, a:hover, a:active {
     outline: 0px !important;
 	text-decoration:none;
 }
+
+.clearfix {
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
 .clear {
     clear: both;
     display: block;
@@ -1359,8 +1366,9 @@ border: 1px solid #CE1139;
 
 .projects {
     padding: 60px 0 40px;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
+    width: max-content;
 }
 
 
