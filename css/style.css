@@ -657,7 +657,7 @@ a.contact_btn:hover {
 
 
 #Portfolio {
-    padding: 110px 0;
+    padding: 20px 0;
     background: #03a9f4;
 }
 
@@ -1051,14 +1051,14 @@ transition: all .3s;
 border: 1px solid #CE1139;
 }
 #aboutUs {
-    padding: 110px 0;
+    padding: 20px 0;
 }
 
 /* Contact
 ---------------------------------*/
 .page_section.contact {
-    padding: 90px 0 100px;
-    color: #fff;
+    padding: 20px 0;
+    color: #000;
 }
  
 .contact_section {
