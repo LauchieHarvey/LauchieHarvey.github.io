@@ -1372,6 +1372,7 @@ border: 1px solid #CE1139;
     display: block;
     margin: 0 auto;
     width: max-content;
+    max-width: 100%;
 }
 
 
