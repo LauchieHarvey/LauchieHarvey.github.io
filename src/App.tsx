@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Routes from './Components/Routes';
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider, Box } from '@mui/material';
 import CustomTheme from './Components/Theme';
 
 const App = () => {
@@ -11,7 +11,9 @@ const App = () => {
         <BrowserRouter>
             <ThemeProvider theme={CustomTheme}>
                 <Navbar/>
-                <Routes/>
+                <Box sx={{backgroundColor: 'background.default', position: 'fixed', height: '100%', width: '100%'}}>
+                    <Routes/>
+                </Box>
             </ThemeProvider>
         </BrowserRouter>
     );

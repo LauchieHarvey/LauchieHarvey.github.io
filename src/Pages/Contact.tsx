@@ -1,10 +1,10 @@
 import React from 'react';
+import { Typography } from '@mui/material';
 
 const Contact: React.FC = () => {
 
-
     return (
-        <h1>Contact Page</h1>
+        <Typography>Contact Page</Typography>
     );
 }
 
