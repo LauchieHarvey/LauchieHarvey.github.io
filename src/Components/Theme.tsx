@@ -4,7 +4,7 @@ const CustomTheme = responsiveFontSizes(createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            main: '#87B8F0',//'#13011f',
+            main: '#22c9dc',//'#87B8F0',//'#13011f',
         },
         secondary: {
             main: '#EE85F3',//'#ff7676',
@@ -14,16 +14,10 @@ const CustomTheme = responsiveFontSizes(createTheme({
     typography: {
         fontFamily: '"Times New Roman", "sans-serif", Arial',
         button: {
-            textTransform: 'none'
+            textTransform: 'none',
+            fontSize: '1.3rem',
         },
     },
-    components: {
-        MuiLink: {
-            defaultProps: {
-                color: 'secondary.light'
-            }
-        },
-    } 
 }));
 
 export default CustomTheme;

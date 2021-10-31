@@ -10,8 +10,8 @@ const App = () => {
     return (
         <BrowserRouter>
             <ThemeProvider theme={CustomTheme}>
-                <Navbar/>
-                <Box sx={{backgroundColor: 'background.default', position: 'fixed', height: '100%', width: '100%'}}>
+                <Box sx={{backgroundColor: 'background.default', minHeight: '100vh', width: '100%', paddingBottom: '5%'}}>
+                    <Navbar/>
                     <Routes/>
                 </Box>
             </ThemeProvider>
