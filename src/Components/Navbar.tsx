@@ -1,8 +1,7 @@
 import React from 'react';
-import { Box, Button, AppBar, Toolbar, Typography, IconButton, Tooltip, Stack } from '@mui/material';
+import { Box, Button, AppBar, Toolbar, Typography, Stack } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { GitHubIcon, LinkedInIcon } from './Icons';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'; 
@@ -34,16 +33,8 @@ const Navbar: React.FC = () => {
                     {/* TODO: align the social icons to the right. */}
                 </Box>
                 <Stack direction="row">
-                    <Tooltip title="GitHub">
-                        <IconButton sx={{color: 'primary.main', filter: 'saturate(2)'}} target="_blank" href="https:/github.com/LauchieHarvey">
-                            <GitHubIcon/>
-                        </IconButton>
-                    </Tooltip>
-                    <Tooltip title="LinkedIn">
-                        <IconButton sx={{color: 'primary.main', filter: 'saturate(2)'}} target="_blank" href="https://linkedin.com/in/lauchie-harvey">
-                            <LinkedInIcon/>
-                        </IconButton>
-                    </Tooltip>
+                    <GitHubIcon/>
+                    <LinkedInIcon/> 
                 </Stack>
             </Toolbar>
         </AppBar>

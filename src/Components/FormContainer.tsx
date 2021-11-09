@@ -9,7 +9,7 @@ const FormContainer: React.FC<ContainerProps> = ({label, children}: React.PropsW
 
     return (
         <Paper>
-            {label && <Typography variant="h3">{label}</Typography>}
+            {label && <Typography variant="h2">{label}</Typography>}
             {children}
         </Paper>
     );
