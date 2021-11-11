@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
             </Toolbar>
         </AppBar>
         <Box sx={{marginBottom: '4%'}}>
-            <Typography variant="h1" sx={{color: '#fff', filter: 'brightness(95%)', width: '100%', marginLeft: '25%'}}>Lauchie Harvey</Typography>
+            <Typography variant="h1" sx={{color: '#fff', filter: 'brightness(95%)', marginLeft: '25%'}}>Lauchie Harvey</Typography>
             <Typography variant="h2" sx={{color: '#fff', filter: 'brightness(75%)', marginLeft: '50%'}}>Software Developer</Typography>
         </Box>
         </>
