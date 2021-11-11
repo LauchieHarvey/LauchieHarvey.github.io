@@ -4,10 +4,10 @@ const CustomTheme = responsiveFontSizes(createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            main: '#22c9dc',//'#87B8F0',//'#13011f',
+            main: '#22c9dc', // Blue.
         },
         secondary: {
-            main: '#EE85F3',//'#ff7676',
+            main: '#EE85F3', // Pinkish
         },
         tonalOffset: 0.4,
     },

@@ -9,7 +9,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 const Navbar: React.FC = () => {
     return (
         <>
-        <AppBar position="static" sx={{marginBottom: '2%'}}>
+        <AppBar position="sticky" sx={{marginBottom: '2%'}}>
             <Toolbar variant="dense" style={{marginBottom: '0px'}}>
                 <Box display="flex" flexDirection="row" justifyContent="space-evenly" width="100%" alignItems="center">
                     <Box>
