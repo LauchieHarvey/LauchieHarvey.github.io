@@ -9,13 +9,32 @@ import Typography from '@mui/material/Typography';
 const Projects: React.FC = () => {
     const projectList: Array<ProjectCardProps> = [
         {
+            name: "Conway's Game of Life",
+            description: 'This project taught me more about designing test code to get maximum coverage.\
+                            It also gave me the chance to implement the use of data analysis. It was a lesson\
+                            in writing clean code, because I opted for a functional approach which\
+                            I am still getting used to.',
+            imagePaths: ['/lauchie_game_of_life1.png', '/lauchie_game_of_life2.png'],
+            codeLink: 'https://github.com/LauchieHarvey/game_of_life',
+        },
+        {
             name: 'Chemistry Calculator',
             description: 'This project utilised C#, WPF to make a calculator that does chemistry calculations.\
                             It was my first major implementation of Object Oriented design. It also taught me\
                             about writing maintainable and readable code. See the code and an article I wrote\
-                            about it below.',
+                            about it below. I initially built this in python on a highschool break. I refactored it into C# the following holiday.',
             imagePaths: ['/lauchie-calcu-chem.png'],
             codeLink: 'https://github.com/LauchieHarvey/CalcuChem',
+            readMoreLink: 'https://www.linkedin.com/pulse/2-school-holidays-1-chemistry-calculator-how-i-coded-lauchie-harvey/',
+        },
+        {
+            name: 'Stock Simulation in C',
+            description: 'Monte Carlo Simulation of stock prices. It is a multithreaded program developed to simulate different buy and sell strategies\
+                            for stocks/shares. This, combined with some challenging university assignments, taught me about concurrent programming.\
+                            C is a wonderful language and I love writing it whenever I get the chance. The code is quite extensively\
+                            documented in the github repository.',
+            imagePaths: ['/stock_simulation.png'],
+            codeLink: 'https://github.com/LauchieHarvey/stockSimulation',
         },
         {
             name: 'Full Stack Website',
@@ -26,15 +45,6 @@ const Projects: React.FC = () => {
                             It was an invaluable experience to develop a full stack website in highschool.',
             imagePaths: ['/uniDatabase.png', '/uniDatabase1.png'],
         },
-        {
-            name: "Conway's Game of Life",
-            description: 'This project taught me more about designing test code to get maximum coverage.\
-                            It also gave me the chance to implement the use of data analysis. It was a lesson\
-                            in writing clean code, because I opted for a functional approach which\
-                            I am still getting used to.',
-            imagePaths: ['/lauchie_game_of_life1.png', '/lauchie_game_of_life2.png'],
-            codeLink: 'https://github.com/LauchieHarvey/game_of_life',
-        }
     ]
 
     return (
@@ -65,6 +75,7 @@ const ProjectCard = ({name, description, imagePaths, codeLink, readMoreLink}: Pr
                     component="img"
                     alt={`${name} ${index}`}
                     image={imagePath}
+                    sx={{marginBottom: '10px'}}
                 />
             ))}
             <CardContent>
@@ -73,9 +84,8 @@ const ProjectCard = ({name, description, imagePaths, codeLink, readMoreLink}: Pr
                 </Typography>
             </CardContent>
             <CardActions>
-                {/* TODO: Implement with actual links.*/}
-                <Button size="small">See Code</Button>
-                <Button size="small">Learn More</Button>
+                {codeLink && <Button size="small" href={codeLink}>See Code</Button>}
+                {readMoreLink && <Button size="small" href={codeLink}>Learn More</Button>}
             </CardActions>
         </Card>
     )

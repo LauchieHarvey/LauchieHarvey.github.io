@@ -30,7 +30,6 @@ const Navbar: React.FC = () => {
                             My Projects
                         </Button>
                     </Box>
-                    {/* TODO: align the social icons to the right. */}
                 </Box>
                 <Stack direction="row">
                     <GitHubIcon/>
@@ -38,10 +37,6 @@ const Navbar: React.FC = () => {
                 </Stack>
             </Toolbar>
         </AppBar>
-        <Box sx={{marginBottom: '4%'}}>
-            <Typography variant="h1" sx={{color: '#fff', filter: 'brightness(95%)', marginLeft: '25%'}}>Lauchie Harvey</Typography>
-            <Typography variant="h2" sx={{color: '#fff', filter: 'brightness(75%)', marginLeft: '50%'}}>Software Developer</Typography>
-        </Box>
         </>
     );
 }

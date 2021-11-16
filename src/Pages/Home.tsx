@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Paper, Link, List, ListItem, ListItemIcon, ListItemText, Stack } from '@mui/material';
+import { Typography, Box, Paper, Link, List, ListItem, ListItemIcon, ListItemText, Stack } from '@mui/material';
 import CheckBoxTwoToneIcon from '@mui/icons-material/CheckBoxTwoTone';
 
 const Home: React.FC = () => {
@@ -20,6 +20,11 @@ const Home: React.FC = () => {
     ];
 
     return (
+        <>
+        <Box sx={{marginTop: '20vh', marginBottom: '30vh'}}>
+            <Typography variant="h1" sx={{color: '#fff', filter: 'brightness(95%)', marginLeft: '25%'}}>Lauchie Harvey</Typography>
+            <Typography variant="h2" sx={{color: '#fff', filter: 'brightness(75%)', marginLeft: '50%'}}>Software Developer</Typography>
+        </Box>
         <Stack direction="column" justifyContent="space-evenly" alignItems="center">
             {/* Intoductory self-description */}
             <Paper elevation={4} sx={{padding: '1%', maxWidth: '60%', marginBottom: '5%'}}>
@@ -47,6 +52,7 @@ const Home: React.FC = () => {
                 </List>
             </Paper>
         </Stack>
+        </>
     );
 }
 
