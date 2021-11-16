@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import {Theme} from '@mui/material';
 
 const Projects: React.FC = () => {
     const projectList: Array<ProjectCardProps> = [
@@ -68,8 +69,13 @@ interface ProjectCardProps {
  */
 const ProjectCard = ({name, description, imagePaths, codeLink, readMoreLink}: ProjectCardProps) => {
 
-   return (
-         <Card sx={{width: '40%', margin: 'auto', marginBottom: '15vh'}}>
+    return (
+         <Card sx={{
+                maxWidth: '80%',
+                width: {xs: '80%', sm: '70%', md: '50%', lg: '40%', xl: '40%'},
+                margin: 'auto',
+                marginBottom: '15vh'
+            }}>
             {imagePaths.map((imagePath: string, index: number) => (
                 <CardMedia
                     component="img"
