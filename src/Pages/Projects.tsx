@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import {Theme} from '@mui/material';
+import MetaTags from '../Components/MetaTags';
 
 const Projects: React.FC = () => {
     const projectList: Array<ProjectCardProps> = [
@@ -50,6 +50,11 @@ const Projects: React.FC = () => {
 
     return (
         <>
+            <Typography variant="h1">Projects</Typography>
+            <MetaTags 
+                title="Lauchie Harvey | Projects" 
+                description="View Lauchie Harvey's software projects. Lauchie has built a myriad of different projects,
+                    from full stack web apps to complicated concurrent C programmes."/>
            {projectList.map((projectProps: ProjectCardProps, index: number) => (
                <ProjectCard key={index} {...projectProps}/>
            ))} 

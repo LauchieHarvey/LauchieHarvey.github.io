@@ -13,6 +13,11 @@ const CustomTheme = responsiveFontSizes(createTheme({
     },
     typography: {
         fontFamily: '"Times New Roman", "sans-serif", Arial',
+        h1: {
+            color: '#fff',
+            filter: 'brightness(95%)',
+            textAlign: 'center'
+        },
         button: {
             textTransform: 'none',
             fontSize: '1.3rem',
