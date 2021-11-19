@@ -26,9 +26,30 @@ const Home: React.FC = () => {
             title="Lauchie Harvey | Software Developer" 
             description="Lauchie Harvey is a software developer. Lauchie is currently employed at AMT.
              This portfolio website showcases his software projects and developer capabilities."/>
-        <Box sx={{marginTop: '20vh', marginBottom: '30vh'}}>
-            <Typography variant="h1" sx={{color: '#fff', filter: 'brightness(95%)'}}>Lauchie Harvey</Typography>
-            <Typography variant="h2" sx={{color: '#fff', filter: 'brightness(75%)', marginLeft: '50%'}}>Software Developer</Typography>
+        <Box sx={{marginTop: '30vh', marginBottom: '50vh'}}>
+            <Typography variant="h1" sx={{
+                color: '#fff', 
+                filter: 'brightness(95%)',
+                marginLeft: {xs: '0%', sm: '0%', md: '15%', lg: '25%'},
+                textAlign: {xs: 'center', sm: 'center', md: 'left'}
+            }}>Lauchie Harvey</Typography>
+            <Typography variant="h2" sx={{
+                color: '#fff',
+                filter: 'brightness(75%)',
+                marginLeft: {xs: '0%', sm: '5%', md: '45%', lg: '55%'},
+                textAlign: {xs: 'center', sm: 'center', md: 'left'}
+            }}>Software Developer</Typography>
+            <Typography variant="body1" sx={{
+                position: 'absolute',
+                margin: 'auto',
+                textAlign: 'center',
+                color: '#fff',
+                filter: 'brightness(55%)',
+                left: '0',
+                right: '0',
+                bottom: '2%',
+                width: '100%'
+                }}>Scroll down to read more...</Typography>
         </Box>
         <Stack direction="column" justifyContent="space-evenly" alignItems="center">
             {/* Intoductory self-description */}

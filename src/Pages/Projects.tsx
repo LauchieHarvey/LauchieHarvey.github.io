@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
 
     return (
         <>
-            <Typography variant="h1">Projects</Typography>
+            <Typography variant="h1" sx={{marginTop: '10%', marginBottom: '10%'}}>Projects</Typography>
             <MetaTags 
                 title="Lauchie Harvey | Projects" 
                 description="View Lauchie Harvey's software projects. Lauchie has built a myriad of different projects,

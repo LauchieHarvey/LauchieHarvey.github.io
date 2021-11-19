@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
         <MetaTags 
             title="Lauchie Harvey | Contact" 
             description={`Contact Lauchie Harvey. You can reach him by email, on GitHub or on LinkedIn. Email is preferred, send it to ${myEmail}. Lauchie responds within 24 hours.`}/>
-        <Typography variant="h1">Contact Lauchie Harvey</Typography>
+        <Typography variant="h1" sx={{marginTop: '10%', marginBottom: '10%'}}>Contact Lauchie Harvey</Typography>
         <Paper sx={{maxWidth: {xs: '90%', sm: '80%', md: '60%', lg: '40%'}, margin: 'auto', padding: '1%'}}>
             <Grid container alignItems="center">
                 <Grid item xs={12} sm={6} md={5}>
