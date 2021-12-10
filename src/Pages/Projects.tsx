@@ -10,6 +10,16 @@ import MetaTags from '../Components/MetaTags';
 const Projects: React.FC = () => {
     const projectList: Array<ProjectCardProps> = [
         {
+            name: 'Quick Vim',
+            description: 'A website designed to help people practice vim commands. I developed this to help people improve their efficiency when writing code.\
+                            Vim commands are quite the black box. I used to always have to search up commands for different purposes, but\
+                            since I started actively practicing the commands I have improved my coding speed drastically.\
+                            It is still under development! Feel free to try it out!\
+                            ',
+            imagePaths: ['/quickvim.png'],
+            codeLink: 'http://quickvim.com/',
+        },
+        {
             name: "Conway's Game of Life",
             description: 'This project taught me more about designing test code to get maximum coverage.\
                             It also gave me the chance to implement the use of data analysis. It was a lesson\
@@ -90,13 +100,14 @@ const ProjectCard = ({name, description, imagePaths, codeLink, readMoreLink}: Pr
                 />
             ))}
             <CardContent>
+                <Typography variant="h2" color="text.secondary">{name}</Typography>
                 <Typography variant="body2" color="text.secondary">
                     {description}
                 </Typography>
             </CardContent>
             <CardActions>
                 {codeLink && <Button size="small" href={codeLink}>See Code</Button>}
-                {readMoreLink && <Button size="small" href={codeLink}>Learn More</Button>}
+                {readMoreLink && <Button size="small" href={readMoreLink}>Learn More</Button>}
             </CardActions>
         </Card>
     )
