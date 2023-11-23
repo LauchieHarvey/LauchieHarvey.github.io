@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
                         Feel free to send me an email, I usually respond within 24 hours.
                     </Typography>
                     <Typography align="center" variant="body1">
-                        I am happy to talk all things software development :)
+                        I am happy to talk all things cyber security :)
                     </Typography>
                 </Grid>
             </Grid>
