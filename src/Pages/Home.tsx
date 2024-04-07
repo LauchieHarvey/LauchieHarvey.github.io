@@ -26,7 +26,7 @@ const Home: React.FC = () => {
                 filter: 'brightness(75%)',
                 marginLeft: {xs: '0%', sm: '5%', md: '45%', lg: '55%'},
                 textAlign: {xs: 'center', sm: 'center', md: 'left'}
-            }}>Cyber Security</Typography>
+            }}>Software Engineer</Typography>
             <Typography variant="body1" sx={{
                 visibility: hasScrolled ? 'hidden' : 'visible',
                 position: 'absolute',
@@ -42,7 +42,7 @@ const Home: React.FC = () => {
         </Box>
         <Stack direction="column" justifyContent="space-evenly" alignItems="center">
             <Typography variant="body1" style={{fontSize: "1.5rem", color: "#fff", filter: 'brightness(95%)', marginTop: '5%', marginBottom: '15%'}}>
-                I am unwavering in my commitment to protect people from cyber threats.
+                Passionate about leveraging technology to develop innovative solutions that drive user engagement and satisfaction.
             </Typography>
             {/* Intoductory self-description */}
             <Paper elevation={4} sx={{padding: '1%', maxWidth: '60%', marginBottom: '5%'}}>
