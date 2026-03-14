@@ -9,6 +9,9 @@
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
+
+  --font-heading: "Spectral", serif;
+  --font-body: "Jost", sans-serif;
 }
 
 html {
@@ -24,11 +27,20 @@ h6 {
   font-weight: var(--fw-regular);
   margin: 0;
   color: var(--primary-text);
+  font-family: var(--font-heading);
 }
 
 p {
-  color: var(--primary-text-tl);
   margin: 0;
+  font-family: var(--font-body);
+}
+
+p:not(.opaque) {
+  color: var(--primary-text-tl);
+}
+
+button {
+  font-family: var(--font-body);
 }
 
 b {
@@ -37,4 +49,40 @@ b {
 
 #hero-section {
   height: 100svh;
+}
+
+button.primary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color),
+    hsl(42deg 80% 70%) 100%
+  );
+  padding: 0.4rem 0.8rem;
+  font-weight: var(--fw-semibold);
+  font-size: 1.25rem;
+  color: var(--primary-text);
+
+  border-width: 1px;
+  border-style: outset;
+  border-color: var(--primary-text);
+  border-radius: 0;
+}
+
+button.primary:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    45deg,
+    hsl(43.2, 71.43%, 98%),
+    hsl(42deg 80% 65%) 100%
+  );
+}
+
+button.primary:focus-visible {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  outline: none;
 }
