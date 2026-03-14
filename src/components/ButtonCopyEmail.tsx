@@ -61,7 +61,7 @@ const ButtonCopyEmail = () => {
         onClick={handleClick}
         style={{ width: "10rem" }}
       >
-        <EnvelopeCheckedIcon /> Copied!
+        <EnvelopeCheckedIcon /> Copied
       </button>
     );
   }
