@@ -35,7 +35,6 @@ const ButtonCopyEmail = () => {
 
     try {
       await navigator.clipboard.writeText(EMAIL_ADDRESS);
-      console.log("success");
     } catch (e) {
       console.error(e);
     }
@@ -59,7 +58,7 @@ const ButtonCopyEmail = () => {
         className="primary"
         title="Successfully copied to clipboard"
         onClick={handleClick}
-        style={{ width: "10rem" }}
+        style={{ width: "9rem" }}
       >
         <EnvelopeCheckedIcon /> Copied
       </button>
@@ -71,7 +70,7 @@ const ButtonCopyEmail = () => {
       className="primary"
       title={`Copy ${EMAIL_ADDRESS} to clipboard`}
       onClick={handleClick}
-      style={{ width: "10rem" }}
+      style={{ width: "9rem" }}
     >
       <EnvelopeIcon /> Copy email
     </button>

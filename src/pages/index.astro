@@ -15,7 +15,7 @@ import "./index.css";
 		<div class="hero-content-container">
 
 			<div class="sphere-container">
-				<Sphere client:load/>
+				<Sphere client:load client:only/>
 			</div>
 
 			<div class="copy-container">
@@ -29,26 +29,35 @@ import "./index.css";
 					<ButtonCopyEmail client:load/>
 
 					<div class="social-links">
-						<a href="https://linkedin.com" title="LinkedIn"><LinkedIn/></a>
+						<a href="https://linkedin.com" target="_blank" title="LinkedIn"><LinkedIn/></a>
 
-						<a href="https://github.com" title="GitHub"><Github/></a>
+						<a href="https://github.com" target="_blank" title="GitHub"><Github/></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
-		<p>Lorem ipsum dolor sit amet</p>
+
+	<section id="my-work">
+		<h2>My work</h2>
+
+		<h3>Pacific Infrastructure Pipeline</h3>
+		<p>
+			An international effort to streamline infrastructure investment and visibility. 
+			I was the developer primarily responsible for building the public facing frontend.
+		</p>
+		<a href="https://pacificinfrastructure.org" target="_blank">
+			<img src="../public/pip-website.png"/>
+		</a>
+
+		<h3>Wedding website</h3>
+		<p>
+			A website I designed and built myself. It uses Firebase for RSVPs and hosting. On the frontend it is built with Svelte 5.
+		</p>
+		<a href="https://nandaandlauchie.web.app" target="_blank">
+			<img src="../public/wedding-website.png"/>
+		</a>
+
 	</section>
 </Layout>
 
@@ -59,7 +68,7 @@ import "./index.css";
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 2.4rem;
 		font-weight: var(--fw-light);
 	}
 
@@ -96,7 +105,7 @@ import "./index.css";
 	}
 
 	.copy-container p {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 
 	.cta-container {
@@ -128,6 +137,37 @@ import "./index.css";
 		scale: 1.2;
 		background-color: var(--primary-color-light);
 		border-color: var(--primary-text);
+	}
+
+
+	#my-work {
+		text-align: center;
+		padding: 0.8rem 0.8rem 4rem 0.8rem;
+	}
+
+	#my-work h2 {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	#my-work h3, p {
+		margin-bottom: 1rem;
+	}
+
+	#my-work h3 {
+		margin-top: 6rem;
+	}
+
+	#my-work a img {
+		max-height: 40svh;
+		max-width: 80svw;
+
+		box-shadow: 0px 2px 6px 2px var(--primary-text-tl);
+		transition: scale 0.2s ease-in;
+	}
+
+	#my-work a img:hover {
+		scale: 1.01;
 	}
 
 </style>

@@ -1,28 +1,24 @@
 import { useGLTF } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { type Mesh } from "three";
+
+const MIN_CAMERA_Y = -2;
+const MAX_CAMERA_Y = 2;
+const SCROLL_FACTOR = 0.005;
+
+const calculateCameraYPosition = (scrollY: number | undefined) => {
+  scrollY ??= 0;
+  const newCameraY = MAX_CAMERA_Y - scrollY * SCROLL_FACTOR;
+
+  return Math.min(MAX_CAMERA_Y, Math.max(newCameraY, MIN_CAMERA_Y));
+};
 
 const SphereMesh = () => {
   const meshRef = useRef<Mesh | null>(null);
   const { camera } = useThree();
-  const [scrollY, setScrollY] = useState<number>(0);
 
   const { scene } = useGLTF("/wordCloudSphere.glb");
-
-  const minCameraY = -2;
-  const maxCameraY = 2;
-  const scrollFactor = 0.005;
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useFrame((state, delta) => {
     // Rotate sphere around Y axis.
@@ -31,8 +27,7 @@ const SphereMesh = () => {
     }
 
     // Update camera Y position based on scroll.
-    const newCameraY = maxCameraY - scrollY * scrollFactor;
-    camera.position.y = Math.min(maxCameraY, Math.max(newCameraY, minCameraY));
+    camera.position.y = calculateCameraYPosition(window?.scrollY);
     camera.lookAt(0, 0, 0);
   });
 
@@ -44,10 +39,12 @@ const SphereMesh = () => {
 };
 
 const Sphere = () => {
+  const initialCameraY = calculateCameraYPosition(window?.scrollY);
+
   return (
     <Canvas
       style={{ width: "100%", height: "100%" }}
-      camera={{ position: [8, 2, 0] }}
+      camera={{ position: [8, initialCameraY, 0] }}
     >
       <SphereMesh />
     </Canvas>

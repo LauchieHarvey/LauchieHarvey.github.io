@@ -3,7 +3,7 @@
   --primary-color: hsl(43.2, 71.43%, 93.14%);
   --primary-color-dark: hsl(42.13, 70.15%, 86.86%);
   --primary-text: hsl(0, 0%, 13.33%);
-  --primary-text-tl: hsl(0, 0%, 13.33%, 0.7);
+  --primary-text-tl: hsl(0, 0%, 13.33%, 0.75);
 
   --fw-light: 300;
   --fw-regular: 400;
@@ -60,7 +60,7 @@ button.primary {
   gap: 0.4rem;
   padding: 0.4rem 0.8rem;
   font-weight: var(--fw-medium);
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--primary-text);
   background-color: var(--primary-color);
 
