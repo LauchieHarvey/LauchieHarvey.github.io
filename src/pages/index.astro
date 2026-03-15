@@ -9,64 +9,89 @@ import "./index.css";
 ---
 
 <Layout>
-		<section id="hero-section">
-			<h1>Lauchie Harvey - Software Developer</h1>
+	<section id="hero-section">
+		<h1>Lauchie Harvey - Software Developer</h1>
 
-			<div class="hero-content-container">
+		<div class="hero-content-container">
 
-				<div class="sphere-container">
-					<Sphere client:load/>
-				</div>
+			<div class="sphere-container">
+				<Sphere client:load/>
+			</div>
 
-				<div class="copy-container">
-					<p class="opaque">Full stack web developer with <b>5+ years of experience</b>.
-						<br/>
-						I love solving UX problems to improve the lives of my users.
-					</p>
+			<div class="copy-container">
+				<p class="opaque">
+					Full stack web developer with <b>5+ years of experience</b>.
+					<br/>
+					I love solving UX problems to improve the lives of my users.
+				</p>
 
-					<div class="cta-container">
-						<ButtonCopyEmail client:load/>
+				<div class="cta-container">
+					<ButtonCopyEmail client:load/>
 
-						<div class="social-links">
-							<a href="https://linkedin.com" title="LinkedIn"><LinkedIn/></a>
+					<div class="social-links">
+						<a href="https://linkedin.com" title="LinkedIn"><LinkedIn/></a>
 
-							<a href="https://github.com" title="GitHub"><Github/></a>
-						</div>
+						<a href="https://github.com" title="GitHub"><Github/></a>
 					</div>
 				</div>
 			</div>
-
-		</section>
+		</div>
+	</section>
+	<section>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+	</section>
 </Layout>
 
 <style>
-	h1 {
-		font-size: 3rem;
+	#hero-section {
+		padding: 0.8rem;
+		box-sizing: border-box;
 	}
 
-	.sphere-container {
-		position: relative;
-		width: 20rem;
-		height: 20rem;
-		overflow: visible;
+	h1 {
+		font-size: 3rem;
+		font-weight: var(--fw-light);
 	}
 
 	.hero-content-container {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		justify-content: space-around;
 
 		@media screen and (min-width: 700px) {
 			flex-direction: row;
 			position: relative;
 			top: 50%;
-			transform: translateY(-100%);
+			transform: translateY(-50%);
+		}
+	}
+
+	.sphere-container {
+		position: relative;
+		width: 80svw;
+		height: 80svw;
+
+		@media screen and (min-width: 700px) {
+			width: 40svw;
+			height: 40svw;
 		}
 	}
 
 	.copy-container {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		gap: 1rem;
 	}
 
@@ -92,12 +117,17 @@ import "./index.css";
 		border-radius: 50%;
 		text-decoration: none;
 		color: var(--primary-text);
-		background-color: var(--primary-color-dark);
-		transition: scale 0.2s ease;
+		background-color: var(--primary-color);
+		border: 1px solid var(--primary-color);
+		transition-duration: 0.2s;
+		transition-property: scale, background-color, border-color;
+		transition-timing-function: ease-in-out
 	}
 
 	.cta-container .social-links a:hover {
 		scale: 1.2;
+		background-color: var(--primary-color-light);
+		border-color: var(--primary-text);
 	}
 
 </style>

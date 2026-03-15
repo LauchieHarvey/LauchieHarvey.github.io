@@ -1,4 +1,5 @@
 :root {
+  --primary-color-light: hsl(43.2, 71.43%, 97%);
   --primary-color: hsl(43.2, 71.43%, 93.14%);
   --primary-color-dark: hsl(42.13, 70.15%, 86.86%);
   --primary-text: hsl(0, 0%, 13.33%);
@@ -45,7 +46,7 @@ button {
 }
 
 b {
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
 }
 
 #hero-section {
@@ -58,7 +59,7 @@ button.primary {
   align-items: center;
   gap: 0.4rem;
   padding: 0.4rem 0.8rem;
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-medium);
   font-size: 1.25rem;
   color: var(--primary-text);
   background-color: var(--primary-color);
@@ -72,7 +73,7 @@ button.primary {
 
 button.primary:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: var(--primary-color-light);
 }
 
 button.primary:focus-visible {
