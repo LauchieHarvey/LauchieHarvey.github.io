@@ -14,11 +14,14 @@ const calculateCameraYPosition = (scrollY: number | undefined) => {
   return Math.min(MAX_CAMERA_Y, Math.max(newCameraY, MIN_CAMERA_Y));
 };
 
+const sphereModelUrl = `${import.meta.env.BASE_URL}wordCloudSphere.glb`;
+useGLTF.preload(sphereModelUrl);
+
 const SphereMesh = () => {
   const meshRef = useRef<Mesh | null>(null);
   const { camera } = useThree();
 
-  const { scene } = useGLTF("/wordCloudSphere.glb");
+  const { scene } = useGLTF(sphereModelUrl);
 
   useFrame((state, delta) => {
     // Rotate sphere around Y axis.
