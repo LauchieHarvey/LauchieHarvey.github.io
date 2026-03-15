@@ -1,0 +1,83 @@
+:root {
+  --primary-color-light: hsl(43.2, 71.43%, 97%);
+  --primary-color: hsl(43.2, 71.43%, 93.14%);
+  --primary-color-dark: hsl(42.13, 70.15%, 86.86%);
+  --primary-text: hsl(0, 0%, 13.33%);
+  --primary-text-tl: hsl(0, 0%, 13.33%, 0.75);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --font-heading: "Spectral", serif;
+  --font-body: "Jost", sans-serif;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-regular);
+  margin: 0;
+  color: var(--primary-text);
+  font-family: var(--font-heading);
+}
+
+p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: var(--fw-light);
+}
+
+p:not(.opaque) {
+  color: var(--primary-text-tl);
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+b {
+  font-weight: var(--fw-regular);
+}
+
+#hero-section {
+  height: 100svh;
+}
+
+button.primary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  font-weight: var(--fw-medium);
+  font-size: 1rem;
+  color: var(--primary-text);
+  background-color: var(--primary-color);
+
+  border-width: 1px;
+  border-style: outset;
+  border-color: var(--primary-text);
+  border-radius: 0;
+  transition: background-color 0.2s ease;
+}
+
+button.primary:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-light);
+}
+
+button.primary:focus-visible {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  outline: none;
+}
