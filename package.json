@@ -9,7 +9,7 @@
     "dev": "astro dev",
     "build": "astro build && node -e \"require('fs').writeFileSync('./dist/.nojekyll', '')\"",
     "preview": "astro preview",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -b gh-pages --dotfiles",
     "astro": "astro"
   },
   "dependencies": {
