@@ -29,9 +29,9 @@ import "./index.css";
 					<ButtonCopyEmail client:load/>
 
 					<div class="social-links">
-						<a href="https://linkedin.com" target="_blank" title="LinkedIn"><LinkedIn/></a>
+						<a href="https://www.linkedin.com/in/lauchie-harvey" target="_blank" title="LinkedIn"><LinkedIn/></a>
 
-						<a href="https://github.com" target="_blank" title="GitHub"><Github/></a>
+						<a href="https://github.com/LauchieHarvey" target="_blank" title="GitHub"><Github/></a>
 					</div>
 				</div>
 			</div>
@@ -133,10 +133,12 @@ import "./index.css";
 		transition-timing-function: ease-in-out
 	}
 
-	.cta-container .social-links a:hover {
+	.cta-container .social-links a:hover,
+	.cta-container .social-links a:focus-visible {
 		scale: 1.2;
 		background-color: var(--primary-color-light);
 		border-color: var(--primary-text);
+		outline: none;
 	}
 
 
